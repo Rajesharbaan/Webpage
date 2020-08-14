@@ -1,0 +1,136 @@
+/* base styles */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+
+body{
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222;
+}
+
+/* common styles */
+.container{
+    width: 1080px;
+    margin: 0 auto;
+    display: table;
+}
+
+
+/* header styles  */
+
+header{
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    display: table;
+}
+
+.header__logo-wrapper{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+.header__logo{
+    border: 2px solid #222;
+    font-size: 18px;
+    letter-spacing: 3px;
+    padding: 7px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.header__nav{
+    width: 60%;
+    float: left;
+}
+.header__nav-list{
+    list-style: none;
+    display: inline-block;
+    width: auto;
+    display: table;
+    margin: 0 auto;
+}
+.header__nav-item{
+    float: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: table;
+}
+.header__nav-link{
+    padding: 20px 15px;
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    display: table;
+}
+.header__nav-icon{
+    padding-left: 5px;
+    font-size: 13px;
+}
+.header__nav-item:hover .header__nav-link{
+    color:#EE4266;
+}
+
+.header__icons-wrapper{
+    float: right;
+}
+.header__icon{
+    padding: 20px 15px;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+.header__icon:hover{
+    color: #222;
+    transition: 0.2s;
+}
+
+/* hero section styles */
+
+.hero{
+    background-image: url("https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    width: 100%;
+    display: table;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero__overlay{
+    width: 100%;
+    padding: 150px 0px;
+    display: table;
+    background-color: rgba(0,0,0,0.5);
+}
+.hero__content{
+    max-width: 800px;
+    line-height: 1.5;
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+}
+.hero__content > *{
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+.header__sub-heading{
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+.header__main-heading{
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+.btn{
+    padding:15px 20px;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+}
+.btn--black{
+    background-color: #222;
+    color:#fff;
+    text-transform: uppercase;
+}
